@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>WPFAppFrameworkTest</id>
+    <version>0.0.0</version>
+    <title>Titile</title>
+    <authors>Me</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <description>Cool app</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>2021</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+  
+  <files>
+	<file src="bin\Release\**" target="lib\net45"/>
+  </files>
+</package>

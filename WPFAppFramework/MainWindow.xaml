@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label>
+                Current version
+            </Label>
+
+            <TextBox x:Name="CurrentVersionTextBox"
+                IsReadOnly="True">
+
+            </TextBox>
+
+            <Button x:Name="UpdateButton" Click="UpdateButton_Click"
+                Margin="0,15,0,0" IsEnabled="False">
+                Update
+            </Button>
+
+            <Button Click="CheckForUpdatesButton_Click">
+                Check
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>
