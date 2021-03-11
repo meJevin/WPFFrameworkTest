@@ -55,7 +55,14 @@ namespace WPFAppFramework
 
         private async void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            await manager.UpdateApp();
+            try
+            {
+                await manager.UpdateApp();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             MessageBox.Show("Updated succesfuly!");
         }
